@@ -1,0 +1,6 @@
+.env/
+.pycache
+.env
+env/
+# Ignore environment variable files
+*.env
