@@ -13,19 +13,28 @@ EmailScript/
 ## Setup Instructions
 
 1. **Clone or download the repository.**
-   **Make Virtual environment outside your cloned repository**
-   ``` sh
-   python -m venv env
-   ```
-   This will create env file
-   - 
+
+2. **Create a virtual environment (recommended to keep it outside your project folder):**
+   Open a terminal and run:
    ```sh
-   env\Scripts\activate. 
+   python -m venv ../env
    ```
-   this will activate the virtual environment.
-   - 
-   move to cloned repository 
-   cd "<folder name of cloned repository>" 
+   This will create a folder named `env` one level above your project directory.
+
+3. **Activate the virtual environment:**
+   On Windows, run:
+   ```sh
+   ..\env\Scripts\activate
+   ```
+   On macOS/Linux, run:
+   ```sh
+   source ../env/bin/activate
+   ```
+
+4. **Navigate to your cloned repository folder:**
+   ```sh
+   cd "EmailScript"
+   ```
 2. **Install dependencies:**
     -write given code in cmd line of your code editor
    ```sh
