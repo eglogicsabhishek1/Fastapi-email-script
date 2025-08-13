@@ -17,18 +17,18 @@ EmailScript/
 2. **Create a virtual environment (recommended to keep it outside your project folder):**
    Open a terminal and run:
    ```sh
-   python -m venv ../env
+   python -m venv 
    ```
-   This will create a folder named `env` one level above your project directory.
+   This will create a folder named `env` directory.
 
 3. **Activate the virtual environment:**
    On Windows, run:
    ```sh
-   ..\env\Scripts\activate
+   \env\Scripts\activate
    ```
    On macOS/Linux, run:
    ```sh
-   source ../env/bin/activate
+   source /env/bin/activate
    ```
 
 4. **Navigate to your cloned repository folder:**
