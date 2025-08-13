@@ -5,9 +5,11 @@ This project provides a simple FastAPI service to send emails using SMTP. The AP
 ## Project Structure
 
 ```
-EmailScript/
-├── main.py         # FastAPI application with email sending endpoint
-├── .env            # Environment variables for SMTP credentials
+project-root/
+├── env/                # (Recommended) Virtual environment folder
+├── EmailScript/
+│   ├── main.py         # FastAPI application with email sending endpoint
+│   ├── .env            # Environment variables for SMTP credentials
 ```
 
 ## Setup Instructions
