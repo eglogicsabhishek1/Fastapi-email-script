@@ -13,9 +13,23 @@ EmailScript/
 ## Setup Instructions
 
 1. **Clone or download the repository.**
-2. **Install dependencies:**
+   **Make Virtual environment outside your cloned repository**
+   ``` sh
+   python -m venv env
+   ```
+   This will create env file
+   - 
    ```sh
-   pip install fastapi uvicorn python-dotenv
+   env\Scripts\activate. 
+   ```
+   this will activate the virtual environment.
+   - 
+   move to cloned repository 
+   cd "<folder name of cloned repository>" 
+2. **Install dependencies:**
+    -write given code in cmd line of your code editor
+   ```sh
+   pip install fastapi[standard]
    ```
 3. **Configure SMTP credentials:**
    - Edit the `.env` file with your SMTP username and password:
@@ -26,12 +40,26 @@ EmailScript/
    - For Gmail, use an App Password (not your regular password).
    - to generate your app password for google "https://myaccount.google.com/apppasswords" 
 
+4. **Steps to generate app password for google**
+   - make sure your 2-factor authentication in on.
+   -to check 2-F Authentication: "https://myaccount.google.com/intro/security". Here you will see whether your 2FA is on or not.
+   -after 2fA is on goes to app password for google "https://myaccount.google.com/apppasswords".
+      -Login your account.
+      - a pop up page will appear to enter <app name>. Enter name of your desire.
+      - app password will appear. copy it and use it in .env.   
+         **Note**: Make sure there is no space between app password
+
+
 ## Running the API
 
 Start the FastAPI server with Uvicorn:
+**make sure you are in same directory as main.py**
 ```sh
 uvicorn main:app --reload
 ```
+   Then goes to Browser and hit 
+   - http://127.0.0.1:8000/docs
+
 
 ## Usage
 
